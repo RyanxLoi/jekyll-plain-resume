@@ -1,0 +1,17 @@
+<div class="resume-content">
+    <h2>Skills</h2>
+    <hr>
+
+    {% assign i = 0 %}
+
+    {% for skill in site.data.skills %}
+        {% assign i = i | plus: 1%}
+
+        <h4 class="title">{{ skill.category }}:</h4>
+        {{ skill.list | join: ", " }}
+        <br>
+    
+    {% endfor %}
+<br>
+    </div>
+    

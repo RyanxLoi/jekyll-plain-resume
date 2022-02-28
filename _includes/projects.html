@@ -1,0 +1,26 @@
+<div class="resume-content">
+    <h2>Projects</h2>
+    <hr>
+
+    {% assign i = 0 %}
+
+
+    {% for project in site.data.projects %}
+    {% assign i = i | plus: 1%}
+    
+        <h4 class="title">{{ project.title }} <a class="project-title" href={{project.link}} target="_blank">(Project Link)</a></h4><br>
+        <h4 class="subtitle">{{ project.tools | join: ", " }}</h4>
+        {{ project.description | markdownify }}
+
+        {% if i != site.data.projects | size - 1 %}
+
+        <br>
+        
+        {% else %}
+        {% break %}
+        {% endif %}
+    
+    {% endfor %}
+    
+    </div>
+    

@@ -1,0 +1,27 @@
+<div class="resume-content">
+    <h2>Work Experience</h2>
+    <hr>
+    
+    {% assign i = 0 %}
+
+    {% for workexperience in site.data.workexperience %}
+        
+    {% assign i = i | plus: 1 %}
+
+        <h4 class="title">{{ workexperience.company }}</h4>
+        <h4 class="date">{{ workexperience.time }}</h4><br>
+        <h4 class="subtitle"> {{workexperience.title }}</h4>
+        {{ workexperience.description | markdownify}}
+
+        {% if i != site.data.workexperience | size -1 %}
+
+        <br>
+        
+        {% else %}
+        {% break %}
+        {% endif %}
+    
+    {% endfor %}
+    
+    </div>
+    

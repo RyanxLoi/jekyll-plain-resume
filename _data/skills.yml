@@ -1,0 +1,29 @@
+- category: Languages
+  list: 
+    - Python
+    - JavaScript
+    - HTML
+    - CSS
+    - R
+    - SQL
+
+- category: Frameworks and Libraries
+  list: 
+    - Bootstrap
+    - MongoDB
+    - Express
+    - React
+
+- category: Software and Operating Systems
+  list: 
+    - Linux
+    - Visual Studio Code
+    - Tableau
+    - Microsoft Office
+
+- category: Other Computing Skills
+  list: 
+    - Data structures and algorithms
+    - UI/UX Design
+    - Data analysis
+
