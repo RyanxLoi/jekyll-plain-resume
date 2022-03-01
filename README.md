@@ -1,9 +1,11 @@
 # Plain Jekyll Resume
 This is a Jekyll theme for creating a simple and customizable resume. This could be used to digitally present your resume online and have it be accessible to anyone who is interested in it. 
 
-## How to Install
+## How to Install the Theme
 
-1. Clone the repository
+1. Clone the repository.
+2. Run `bundle exec jekyll serve`
+3. If it compiles successfully, you can now see your resume.
 
 ## Adding Data to the Resume
 The resume loads data from the `_data` files. In this folder, you will find .yml files. This section will go through each .yml file and their formats.
