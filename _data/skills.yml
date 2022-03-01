@@ -1,29 +1,19 @@
-- category: Languages
+- category: Fashion and Design
   list: 
-    - Python
-    - JavaScript
-    - HTML
-    - CSS
-    - R
-    - SQL
+    - Costume design
+    - Makeup art
+    - Stage design
 
-- category: Frameworks and Libraries
+- category: Performance
   list: 
-    - Bootstrap
-    - MongoDB
-    - Express
-    - React
+    - Skit development
+    - Dancing
+    - Magic tricks
+    - Balloon twisting
+    - Prop usage
 
-- category: Software and Operating Systems
-  list: 
-    - Linux
-    - Visual Studio Code
-    - Tableau
-    - Microsoft Office
-
-- category: Other Computing Skills
-  list: 
-    - Data structures and algorithms
-    - UI/UX Design
-    - Data analysis
-
+- category: Marketing
+  list:
+    - Social media management
+    - Digital advertising
+    - Client engagement

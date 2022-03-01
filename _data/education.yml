@@ -1,4 +1,11 @@
-- school: The University
-  time: 2010-2015
-  degree: Bachelor of Science in Computer Science
-    
+- location: The Clown Institute
+  time: 2015 - 2015
+  degree: Clown School Diploma
+  courses:
+    - Finding the Clown in You
+    - Costuming
+    - Skit Development
+  
+- location: University of Fine Arts
+  time: 2010 - 2014
+  degree: Bachelor of Arts in Theatre Arts

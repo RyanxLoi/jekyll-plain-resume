@@ -1,17 +1,17 @@
 <div class="resume-content">
+
+    {% if site.data.skills.size > 0 %}
+
     <h2>Skills</h2>
     <hr>
-
-    {% assign i = 0 %}
-
+    <div class="entry">
     {% for skill in site.data.skills %}
-        {% assign i = i | plus: 1%}
-
+    
         <h4 class="title">{{ skill.category }}:</h4>
         {{ skill.list | join: ", " }}
-        <br>
-    
+        <br />
     {% endfor %}
-<br>
     </div>
+    {% endif %}
+</div>
     

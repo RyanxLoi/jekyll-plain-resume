@@ -1,23 +1,22 @@
 /* Variables
 
---main-color: Changes the colour of the header, footer, and project links.
+--main-color: Changes the color of the header, footer, and project links.
+--background-color: Changes the color of the background.
 
 */
 :root {
-  --main-color: #6f0000;
+  --header-and-footer-color: #6f0000;
+  --background-color: #e5e5e5;
 }
+
+/* Parts of a resume */
 
 body {
-  background-color: #e5e5e5 !important;
-}
-
-h2 {
-  margin-top: 0px;
-  margin-bottom: 0px;
+  background-color: var(--background-color);
 }
 
 div.contact {
-  background-color: var(--main-color);
+  background-color: var(--header-and-footer-color);
   font-size: 18px;
   font-family: "Open Sans", sans-serif;
   color: white;
@@ -39,6 +38,11 @@ div.resume-content{
   width: 50%;
 }
 
+div.entry{
+  padding-bottom: 15px;
+}
+
+
 div.footer {
   background-color: var(--main-color);
   font-size: 18px;
@@ -49,36 +53,11 @@ div.footer {
   width: 50%;
 }
 
-div.box {
-  margin-top: 2%;
-  margin-bottom: 2%;
-  margin-left: 2%;
-  margin-right: 2%;
-  border-style: solid;
-  border-color: #000000;
-  background-color: white;
-}
-
-div.projects {
-  margin-top: 2%;
-  margin-bottom: 2%;
-  margin-left: 2%;
-  margin-right: 2%;
-}
-
-.nav-link {
-  color: #ffffff !important;
-  font-family: "Open Sans", sans-serif;
-}
-
-.btn {
-  margin-right: 15px;
-  width: 100%;
-}
-
 hr {
   border-top: 1px solid black;
 }
+
+/* Headers, links and bullet points */
 
 h1 {
   font-family: "Open Sans", sans-serif;
@@ -87,8 +66,8 @@ h1 {
   margin: 15px;
 }
 
-a.project-title{
-  color: var(--main-color);
+h2 {
+  margin: 0px;
 }
 
 h4.title{
@@ -100,7 +79,6 @@ h4.title{
 
 h4.date {
   font-weight: normal;
-  
   float: right;
   margin: 0;
 }
@@ -108,7 +86,6 @@ h4.date {
 h4.subtitle{
   font-weight: 400;
   font-style: italic;
-  display: inline-block;
   color: #000000;
   font-family: "Open Sans", sans-serif;
   margin: 0;
@@ -118,32 +95,25 @@ a.contact{
   color: white;
 }
 
+a.project-link{
+  color: var(--header-and-footer-color);
+}
+
 ul {
   margin: 0;
 }
 
-.skills-list{
-  display: inline;
-  list-style: none;
-  padding: 0px;
-}
+/* Media queries */
 
-.skills-list li {
-  display: in-line;
-}
+/* for extra small devices */
+@media only screen and (max-width: 600px) {
 
-.skills-list li::after {
-  content: ", ";
-}
-
-/* for small devices up to medium sized devices */
-@media (max-width: 991px) {
-
-  h4.date{
+  h4.date {
     all: revert;
     font-weight: normal;
-    margin: 0;
+    margin: 0px;
   }
+
 
   div.contact {
     width: 95%;
@@ -155,6 +125,9 @@ ul {
     margin: 0px auto;
   }
 
+  div.entry{
+    padding-bottom: 10px;
+  }
 
   div.footer {
     width: 95%;
@@ -162,8 +135,89 @@ ul {
   }
 }
 
-/* Certain laptops and desktops */
-@media (min-width: 992px) {
+/* for small devices */
+@media only screen and (min-width: 600px) {
+
+  h4.date {
+    all: revert;
+    font-weight: normal;
+    margin: 0px;
+  }
+
+
+  div.contact {
+    width: 95%;
+    margin-top: 15px;
+  }
+
+  div.resume-content {
+    width: 95%;
+    margin: 0px auto;
+  }
+
+  div.entry{
+    padding-bottom: 10px;
+  }
+
+  div.footer {
+    width: 95%;
+    margin-bottom: 15px;
+  }
+}
+
+/* for medium devices */
+@media only screen and (min-width: 768px) {
+
+  h4.date {
+    all: revert;
+    float: right;
+    font-weight: normal;
+    margin: 0px;
+  }
+
+
+  div.contact {
+    width: 95%;
+    margin-top: 15px;
+  }
+
+  div.resume-content {
+    width: 95%;
+    margin: 0px auto;
+  }
+
+  div.entry{
+    padding-bottom: 10px;
+  }
+
+  div.footer {
+    width: 95%;
+    margin-bottom: 15px;
+  }
+}
+
+/* for laptops and desktops */
+@media only screen and (min-width: 992px) {
+
+  h4.date{
+    all: revert;
+    font-weight: normal;
+    margin: 0;
+    float: right;
+  }
+
+  div.contact {
+    width: 80%;
+    margin-top: 15px;
+  }
+
+  div.resume-content {
+    width: 80%;
+    margin: 0px auto;
+  }
+
+/* for large laptops and desktops */
+@media (min-width: 1200px) {
 
   h4.date{
     all: revert;
@@ -217,3 +271,4 @@ ul {
 }
 
 
+}
