@@ -1,6 +1,8 @@
 # Plain Jekyll Resume
 This is a Jekyll theme for creating a simple and customizable resume. This could be used to digitally present your resume online and have it be accessible to anyone who is interested in it. 
 
+![partial preview](plainresumepreview.png)
+
 ## How to Install the Theme
 
 1. Clone the repository.
