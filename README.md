@@ -6,11 +6,11 @@ This is a Jekyll theme for creating a simple and customizable resume. This could
 ## How to Install the Theme
 
 1. Clone the repository.
-2. Run `bundle exec jekyll serve`
+2. Run `bundle exec jekyll serve`.
 3. If it compiles successfully, you can now see your resume.
 
 ## Adding Data to the Resume
-The resume loads data from the `_data` files. In this folder, you will find .yml files. This section will go through each .yml file and their formats.
+The resume loads data from the `_data` files. In this folder, you will find .yml files. This is where you will be adding entries to display on your resume.
 
 All entries for each section begin with a `-`. Each line then follows a `key:value` format. Please see the existing .yml files for examples.
 
@@ -44,7 +44,6 @@ Typically, a section layout will look something like this.
 </div>
     
 ```
-
 
 ## Adding Your Own Sections
 If you need a resume section which has not been created yet. Follow these steps. 
